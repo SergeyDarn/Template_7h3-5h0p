@@ -1,0 +1,95 @@
+@import 'decor';
+
+.footer-i {
+    .flexColumn;
+    align-self: flex-start;
+
+    &__title {
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-size: 20px;
+
+        @media @phone-strict {
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        @media @tablet {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        &_about {
+            @media @phone-strict {
+                margin-top: 4%;
+            }
+        }
+    }
+
+    &__container {
+        .flexRow;
+        align-items: flex-start;
+    }
+
+    &_service-support {
+        padding-right: @pagePaddingRL;
+    }
+
+    &_about {
+        padding-right: @pagePaddingRL;
+
+        @media @tablet-strict {
+            margin-left: auto;
+        }
+    }
+}
+
+.order,
+.company {
+    &__list {
+        margin-right: 75px;
+
+        @media @tablet {
+            margin-right: 50px;
+        }
+
+        @media @desktop {
+            margin-right: 100px;
+        }
+    }
+
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        font-size: 16px;
+        color: black;
+        text-decoration: none;
+
+        @media @tablet {
+            font-size: 14px;
+        }
+    }
+}
+
+.payment,
+.why-us {
+    &__item {
+        margin-bottom: 15px;
+    }
+
+    &__link {
+        @media @phone-strict {
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        @media @tablet {
+            font-size: 14px;
+        }
+        color: black;
+        text-decoration: none;
+    }
+}

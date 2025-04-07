@@ -1,0 +1,38 @@
+@import 'decor';
+
+.breadcrumbs {
+    padding: @pagePaddingRL @pagePaddingRL @pagePaddingRL - 1 @pagePaddingRL;
+
+    @media @tablet {
+        padding: 3% @pagePaddingRL 1.5% @pagePaddingRL;
+    }
+
+    @media @desktop {
+        padding-bottom: 1.5%;
+    }
+
+    &__list {
+        .flexRow;
+    }
+
+    &__item {
+        font-size: 17px;
+
+        @media @tablet {
+            font-size: 16px;
+        }
+
+        @media @desktop {
+            font-size: 18px;
+        }
+
+        &_active {
+            .activeStyle;
+            font-weight: normal;
+        }
+    }
+
+    &__link {
+        .linkStyle;
+    }
+}

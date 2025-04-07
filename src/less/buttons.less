@@ -1,0 +1,85 @@
+@import 'decor';
+
+.product-properties-buttons {
+    .flexRow;
+    margin: @pagePaddingRL + 2 0 @pagePaddingRL * 3 0;
+
+    @media @tablet {
+        margin: @itemMargin / 2 0 @itemMargin 0;
+    }
+    @media @desktop {
+        margin-bottom: @itemMargin / 1.3;
+    }
+}
+
+.product-properties-button {
+    &_input {
+        display: none;
+
+        &:checked + label {
+            border: 2px solid @darkRed;
+        }
+    }
+
+    &_label {
+        .button;
+        .shaded;
+        .flexRow;
+        justify-content: center;
+        box-sizing: border-box;
+        background-color: white;
+        margin-right: 4px;
+
+        @media @tablet {
+            margin-right: 6px;
+            font-size: 18px;
+        }
+
+        @media @desktop {
+            font-size: 24px;
+        }
+    }
+
+    &_white {
+        background-color: white;
+    }
+
+    &_yellow {
+        background-color: #e3d95e;
+    }
+
+    &_green {
+        background-color: #a5af96;
+    }
+}
+
+.buy-button {
+    .shaded;
+    background: @darkRed;
+    color: white;
+    border: none;
+    height: 45px;
+    width: 130px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @media @tablet {
+        font-size: 26px;
+        height: 55px;
+        width: 150px;
+    }
+
+    @media @desktop {
+        font-family: @fontRoboto;
+        height: 65px;
+        width: 170px;
+    }
+}
+
+

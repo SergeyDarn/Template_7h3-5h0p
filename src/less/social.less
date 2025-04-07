@@ -1,0 +1,41 @@
+@import 'decor';
+
+.social-media {
+    .flexRow;
+    margin: 20px auto auto;
+
+    @media @tablet-strict {
+        margin: 5% 105px 0 auto;
+    }
+
+    @media @desktop {
+        align-self: flex-start;
+        .flexColumn;
+        margin: 1px 0 0 auto;
+    }
+
+    &__facebook {
+        width: 20px;
+        height: 30px;
+        margin: 10px;
+
+        @media @desktop {
+            margin: 4px auto 0;
+        }
+    }
+
+    &__twitter,
+    &__instagram,
+    &__phone {
+        width: 33px;
+        margin: 10px;
+
+        @media @tablet {
+            width: 30px;
+        }
+
+        @media @desktop {
+            margin: 20px 0 0;
+        }
+    }
+}

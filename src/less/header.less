@@ -1,0 +1,26 @@
+@import 'decor';
+
+.header {
+    &__top {
+        padding: @pagePaddingRL / 1.5  @pagePaddingRL;
+
+        @media @tablet {
+            padding: 1% @pagePaddingRL;
+        }
+    }
+
+    &__bottom {
+        padding: @pagePaddingRL @pagePaddingRL;
+        border: thin solid darken(@backGroundColor, 10%);
+        border-left: none;
+        border-right: none;
+        background-color: @backGroundColor;
+        @media @tablet {
+            padding: 1% @pagePaddingRL;
+        }
+
+        @media @desktop {
+            padding: .5% @pagePaddingRL;
+        }
+    }
+}

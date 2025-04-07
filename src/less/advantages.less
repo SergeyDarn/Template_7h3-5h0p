@@ -1,0 +1,51 @@
+@import 'decor';
+
+.advantages {
+    .flexColumn;
+    align-self: flex-start;
+    align-items: center;
+
+    @media @phone-strict {
+        margin: 10% auto auto;
+    }
+
+    @media @tablet-strict {
+        margin-top: 5%;
+    }
+
+    @media @desktop {
+        margin-top: 6px;
+    }
+
+    &__item {
+        .flexRow;
+        margin-right: auto;
+        margin-bottom: 25px;
+
+        @media @phone-strict {
+            max-width: 270px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+    }
+
+    &__icon {
+        margin-right: 10px;
+
+        &_delivery {
+            width: 50px;
+        }
+
+        &_samples {
+            width: 25px;
+            margin-left: 25px;
+        }
+
+        &_gifts {
+            width: 20px;
+            margin-left: 30px;
+        }
+    }
+}
